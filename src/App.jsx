@@ -3,22 +3,17 @@ import './App.css'
 function App() {
   return (
     <main className="landing">
-      <img
-        src="/tvlb-hero.png"
-        className="hero-image"
-        alt="The Village Lunchbox"
-      />
+      <section className="image-section">
+        <img
+          src="/tvlb-hero.png"
+          className="hero-image"
+          alt="The Village Lunchbox"
+        />
+      </section>
 
-      <div className="hero-content">
-        <h1>The Village Lunchbox</h1>
-
-        <p>
-          Bringing the wisdom of natural, traditional food
-          to the modern table.
-        </p>
-
+      <section className="intro-section">
         <button>Explore Our Food</button>
-      </div>
+      </section>
     </main>
   )
 }
