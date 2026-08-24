@@ -16,70 +16,49 @@ body {
 }
 
 .landing {
-  position: relative;
+  width: 100%;
   min-height: 100vh;
-  overflow: hidden;
   background: #2f241c;
 }
 
+/* Main hero image */
 .hero-image {
-  position: absolute;
-  inset: 0;
+  display: block;
   width: 100%;
-  height: 100%;
+  height: 68vh;
   object-fit: cover;
 }
 
-.landing::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to right,
-    rgba(20, 12, 7, 0.55),
-    rgba(20, 12, 7, 0.05) 65%
-  );
-}
-
+/* Content below the image */
 .hero-content {
-  position: relative;
-  z-index: 2;
-  min-height: 100vh;
+  width: 100%;
+  min-height: 32vh;
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding: 12vh 8vw 12vh;
+  padding: 40px 20px;
   color: #fff8e8;
 }
 
-.hero-content h1 {
-  margin: 0 0 16px;
-  font-size: clamp(2.5rem, 9vw, 6rem);
-  line-height: 0.95;
-  max-width: 700px;
-  text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.65);
-}
-
+/* We don't need a heading or paragraph anymore */
+.hero-content h1,
 .hero-content p {
-  margin: 0 0 28px;
-  max-width: 520px;
-  font-size: clamp(1.1rem, 3vw, 1.6rem);
-  line-height: 1.5;
-  text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.7);
+  display: none;
 }
 
+/* Explore button */
 .hero-content button {
   border: 1px solid rgba(255, 248, 232, 0.8);
-  border-radius: 4px;
-  padding: 14px 24px;
-  background: rgba(65, 40, 22, 0.8);
+  border-radius: 6px;
+  padding: 16px 32px;
+  background: rgba(65, 40, 22, 0.9);
   color: #fff8e8;
-  font: inherit;
-  font-size: 1rem;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.1rem;
   cursor: pointer;
 }
 
 .hero-content button:hover {
-  background: rgba(90, 55, 30, 0.9);
+  background: rgba(90, 55, 30, 1);
 }
