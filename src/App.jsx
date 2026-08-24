@@ -12,7 +12,7 @@ function App() {
       </section>
 
       <section className="intro-section">
-        <button>Explore Our Food</button>
+        <button className="hero-content-btn">Explore Our Food</button>
       </section>
     </main>
   )

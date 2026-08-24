@@ -21,16 +21,22 @@ body {
   background: #2f241c;
 }
 
-/* Main hero image */
+/* Image section */
+.image-section {
+  width: 100%;
+  height: 68vh;
+  overflow: hidden;
+}
+
 .hero-image {
   display: block;
   width: 100%;
-  height: 68vh;
+  height: 100%;
   object-fit: cover;
 }
 
-/* Content below the image */
-.hero-content {
+/* Section below the image */
+.intro-section {
   width: 100%;
   min-height: 32vh;
   display: flex;
@@ -38,17 +44,10 @@ body {
   justify-content: flex-start;
   flex-direction: column;
   padding: 40px 20px;
-  color: #fff8e8;
-}
-
-/* We don't need a heading or paragraph anymore */
-.hero-content h1,
-.hero-content p {
-  display: none;
 }
 
 /* Explore button */
-.hero-content button {
+.hero-content-btn {
   border: 1px solid rgba(255, 248, 232, 0.8);
   border-radius: 6px;
   padding: 16px 32px;
@@ -59,6 +58,6 @@ body {
   cursor: pointer;
 }
 
-.hero-content button:hover {
+.hero-content-btn:hover {
   background: rgba(90, 55, 30, 1);
 }
